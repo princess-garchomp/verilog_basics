@@ -4,7 +4,7 @@ sudo apt install gtkwave
 
 example command line for compliation
 
-        compile: iverilog -o dsn counter_tb.v counter.v
+        compile: iverilog -o dsn and_gate_tb.v and_gate.v
          run it: vvp dsn
 
 example gtkwacve for visualization
