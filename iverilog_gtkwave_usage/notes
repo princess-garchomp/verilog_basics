@@ -1,0 +1,21 @@
+ubuntu:
+sudo apt install iverilog
+sudo apt install gtkwave
+
+example command line for compliation
+
+        compile: iverilog -o dsn counter_tb.v counter.v
+         run it: vvp dsn
+
+example gtkwacve for visualization
+
+        need to create a vdc file in the test becnch to use gtkwave visualizaer, include the follwoing lines in the test bench
+                  $dumpfile("and_gate_tb_test.vdc");
+                  $dumpvars(0,and_gate_tb);
+
+
+
+        to open the file in gtkwave use the following in the command line
+                  gtkwave and_gate_tb_test.vdc
+
+        gtkwave is now oppen, drag variables into place 
